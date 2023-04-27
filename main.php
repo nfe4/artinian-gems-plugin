@@ -208,6 +208,9 @@ if (!class_exists('GEMS_PRODUCTS_PLUGIN')) {
             if (isset($_POST['actionprocess']) && $_POST['actionprocess'] == "insert_into_db") {
 
                 $err = "<h3>Gem Import Request Recieved! </h3>";
+                
+                $this->gems_log(' ');
+                $this->gems_log(' ');
 
                 $this->logs = "Gem Import Request Recived.<br>";
 
